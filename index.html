@@ -13,32 +13,54 @@
     crossorigin="anonymous"
      referrerpolicy="no-referrer" />
 </head>
-<body>
-<h1>My Todo List</h1>
-<form onsubmit="return false">
-    <textarea placeholder="Enter todo..."></textarea>
-    <button id="addBtn">
-        <p>Add Todo</p>
-    </button>
-</form>
-<section>
-        <h4>Current TODOs...</h4>
-        <div class="todoContainer">
-            <!-- <div class="todo">
-                <p>This is the Todo I have to complete 
-                    by the end of the day!</p>
-                <div class="btnContainer">
-                    <button class="iconBtn">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </button>
-                    <button class="iconBtn" >
-                        <i class="fa-solid fa-minus"></i>
-                    </button>
-                </div>
-            </div> -->
-        </div>
+<body style="background-color: gray;">
 
-</section>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/47d61n122d33/seattle/?unit=us" data-label_1="SEATTLE" data-label_2="WEATHER" data-theme="original" >SEATTLE WEATHER</a>
+    <script>
+    !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+            js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);
+        }
+    }
+    (document,'script','weatherwidget-io-js');
+    </script>
+
+
+    <div class ="mainContainer">
+        <div class="widgetContainer">
+            <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&mode=WEEK&showCalendars=0&showTitle=0&showTabs=0&showTz=0&showPrint=0&showNav=0&src=YTUyYzRlMzEzMjA5YzNmMjYwODIxZTQ0ZGI5OWZjYjkxOWEzNDQ1MzRkNzEwYmU2MzkzN2IyMGU5MzNhZjdmNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237cb342&color=%230b8043" style="border-width:0" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+            <!-- Elfsight Weather | Untitled Weather -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-5fc64efd-2420-41b2-abf1-4b645646665e" data-elfsight-app-lazy></div>
+        </div>
+        <div class="listContainer">
+            <h1>My Todo List</h1>
+            <form onsubmit="return false">
+                <textarea placeholder="Enter todo..."></textarea>
+                <button id="addBtn">
+                    <p>Add Todo</p>
+                </button>
+            </form>
+            <section>
+                    <h4>Current TODOs...</h4>
+                    <div class="todoContainer">
+                        <!-- <div class="todo">
+                            <p>This is the Todo I have to complete 
+                                by the end of the day!</p>
+                            <div class="btnContainer">
+                                <button class="iconBtn">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                                <button class="iconBtn" >
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                            </div>
+                        </div> -->
+                    </div>
+            </section>
+        </div>
+    </div>
 </body>
 <script src="index.js"></script>
 </html>

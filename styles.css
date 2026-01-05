@@ -21,7 +21,7 @@ h1{
 
 form,section{
     display: flex;
-    flex-direction: column;
+    flex-direction: flex;
     gap: 14px;
     width: 100%;
     max-width: 800px;
@@ -39,17 +39,43 @@ form button{
     cursor: pointer;
 }
 
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .todoContainer,
 .todo{
-    display: flex;
+    display:flex;
     flex-direction: column;
+    min-width: 400px;
     gap: 14px;
 }
 .todo{
     padding: 14px;
     border:1px solid lightgray;
-    border-radius: 4px;
+    border-radius: 4px; 
     
+
+}
+
+.widgetContainer{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+}
+.calendar{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.elfsight-app-5fc64efd-2420-41b2-abf1-4b645646665e{
+    display: flex;
+    flex-direction: column;
+
 }
 
 .btnContainer{
